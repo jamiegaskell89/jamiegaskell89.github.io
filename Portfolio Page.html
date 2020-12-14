@@ -1,0 +1,412 @@
+<style>
+
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+p {
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  padding-top: 15px;
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 10px;
+  color: white;
+}
+
+#navbar {
+  position: fixed;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  background: url(https://static.vecteezy.com/system/resources/previews/000/094/617/original/free-purple-triangles-vector.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  height: 125px;
+  width: 100%;
+  z-index:1;
+}
+
+/* unvisited link */
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    text-decoration: none;
+    color: white;
+}  
+
+@media (min-width: 1400px) {
+  #navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background: url(https://static.vecteezy.com/system/resources/previews/000/094/617/original/free-purple-triangles-vector.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+  
+  #navbar a {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  width: 10%;
+  padding-top: 25px;
+  color: white;
+  font-size: 1.5em;
+}
+  
+#navbar a:hover {
+  background: #b76bc9;
+}
+  
+header {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-right: 15%;
+  font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  }
+}
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom right, #0b77ba, #0436d9);
+  border-bottom: 1px solid white;
+}
+
+#about-info {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0px;
+}
+
+@media (min-width: 1400px) {
+  #about-info {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+  }
+  
+  #cert-box {
+  width: 50%;
+  position: center;
+  margin: 0 auto;
+}
+}
+
+#responsive-web {
+  max-width: 75%;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  margin-bottom: 40px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;  
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+#title {
+  padding-top: 140px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+@media (min-width: 1400px) {
+  #title {
+    padding-top: 90px;
+  }
+}
+
+@media (min-width: 1400px) {
+  
+  h1 {
+    font-size: 40px;
+    color: white;
+  }
+  
+  #project-description {
+    font-size: 20px;
+    color: white;
+  }
+  
+  #contact-description {
+    font-size: 20px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  background: #b1b4ba;
+  width: 75%;
+  margin: 0 auto;
+  position: center;
+  height: 35px;
+  padding-top: 12px;
+  margin-bottom: 0;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  color: black;
+}
+
+#tech-page {
+  max-width: 75%;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-bottom: 40px;
+}
+
+#landing-page {
+  max-width: 75%;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-bottom: 40px;
+}
+
+#survey-page {
+  max-width: 75%;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-bottom: 40px;
+}
+
+#tribute-page {
+  max-width: 75%;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-bottom: 40px;
+}
+
+#projects {
+  background-image: linear-gradient(62deg, #6e00b5 0%, #38005c 100%);
+  padding: 20px;
+  border-bottom: 1px solid white;
+}
+
+@media (min-width: 1400px) {
+  
+  #project-grid {
+    display: grid;
+    grid-template-columns: 700px 700px;
+    justify-content: center;
+  }
+}
+
+#profile-link {
+  border: 3px solid white;
+  border-radius: 25px;
+  background: #b1b4ba;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px; 
+  color: black;
+  padding: 10px;
+}
+
+.contact-section {
+  background-image: linear-gradient(to bottom right, #0b77ba, #0436d9);
+  padding: 20px;
+  border-bottom: 1px solid white;
+}
+
+#linkedin {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+@media (min-width: 1400px) {
+  #contact-link:hover {
+  transform: translateY(12px);
+  transition: transform 0.3s ease-out;
+}
+}
+  
+#attribution {
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+</style>
+
+<html lang="en">
+
+<nav id="navbar">
+  
+<header>Jamie Gaskell Portfolio</header>  
+  
+<a href="#welcome-section">About</a> 
+</br>  
+<a href="#projects">Projects</a>
+</br>
+<a href="#linkedin">LinkedIn</a>
+  
+</nav>
+
+<body>
+
+<section id="welcome-section">
+  
+  <h1 id="title">Welcome to my web development portfolio!</h1>
+  
+  <p id="about-info">I am a self-taught web developer learning through freecodecamp.org and have so far successfully achieved a certification in 'Responsive Web Design' (please see below). This involved designing responsive web pages in HTML and CSS. 
+  </br>
+  </br>
+In my spare time I volunteer as an IT Support Agent for AbilityNet which involves providing IT support for older and/or disabled people over the phone, through remote device access and face to face where possible.
+</br>
+</br>
+This page is a portfolio for the projects I have completed so far to gain my certifications.</p>
+
+<h2>Certifications</h2>
+
+<p id="about-info">Click on the image to verify the certification</p>
+</br>
+
+<div id="cert-box">
+  
+<a href="https://www.freecodecamp.org/certification/jamiegaskell89/responsive-web-design" target="_blank">  
+
+<h3>Responsive Web Design</h3>
+  
+<img id="responsive-web" src="https://user-images.githubusercontent.com/58035678/100848610-43e99200-3479-11eb-8df9-f9af4787c690.png"> </a> 
+  
+  </div>
+  
+  </section>
+
+<section id="projects">
+  
+  <h2>Projects</h2>
+
+<p id="project-description">Click on the images below to view the page on CodePen. All of my projects and their code can viewed by clicking on the link at the bottom of this section.</p>
+  
+  </br>
+  
+<div id="project-grid">  
+
+<div class=project-tile>  
+  
+  <a href="https://codepen.io/jamiegaskell89/full/WNxaMzv" target="_blank">
+  
+<h3>Technical Documentation Page</h3>
+  
+<img id=tech-page src="https://user-images.githubusercontent.com/58035678/99871853-93a49f80-2bd5-11eb-9b34-dae035518bef.png" alt="Playstation 5 Technical Page"> </a> 
+  
+  </div>
+  
+<div class=project-tile>  
+  
+<a href="https://codepen.io/jamiegaskell89/full/LYZWOvO" target="_blank">
+
+<h3>Blog Landing Page</h3>
+
+<img id=landing-page src="https://user-images.githubusercontent.com/58035678/99961215-ea50db80-2d85-11eb-8e2b-9fb69afcd32c.png" alt="Adventure Blog Landing Page"> </a>
+  
+  </div>
+  
+<div class=project-tile> 
+  
+<a href="https://codepen.io/jamiegaskell89/full/MWewzmx" target="_blank">
+
+<h3>Survey Page</h3>
+
+<img id=survey-page src="https://user-images.githubusercontent.com/58035678/99972977-25a7d600-2d97-11eb-9921-b2c86739782a.png" alt="Survey Page"> </a>
+  
+  </div>
+  
+<div class=project-tile>  
+  
+<a href="https://codepen.io/jamiegaskell89/full/BazBYMO" target="_blank"> 
+  
+<h3>Tribute Page</h3>
+  
+<img id=tribute-page src="https://user-images.githubusercontent.com/58035678/99974991-8fc17a80-2d99-11eb-8185-c208c856930c.png" alt="Tribute Page"> </a>
+  
+  </div>
+  </div>
+     
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<a href="https://github.com/jamiegaskell89?tab=repositories" target="_blank" id="profile-link">&nbsp View all on GitHub &nbsp <i class="fa fa-github" style="font-size:24px"></i> &nbsp </a>
+
+</br>
+</br>
+</br>
+</br>
+  
+  </section>
+
+<section id="linkedin" class="contact-section">
+  
+  <h2>LinkedIn</h2>
+  
+  <p id="contact-description">You can view my profile and contact me through the following link:</p>
+  
+<div id="contact-link">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <a id="linkedin" href="https://www.linkedin.com/in/jamie-gaskell-061074158/" target="_blank">
+  
+    <i class="fa fa-linkedin-square" style="font-size:36px"></i>&nbsp LinkedIn</a>
+  
+  </div>
+
+</br>
+
+<p>Website designed by Jamie Gaskell</p>
+
+<a id=attribution href="https://www.vecteezy.com/free-vector/background" target="_blank">Navbar background vector by Vecteezy</a>
+
+</br>
+</br>
+
+</section>
+
+</body>

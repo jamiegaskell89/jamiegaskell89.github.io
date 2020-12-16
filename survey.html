@@ -1,0 +1,157 @@
+<style>
+
+html {
+  background: #be99ff;
+  }
+#header{
+  text-align: center;
+}
+#survey-box{
+  background: #b87be8;
+  height: 820px;
+  width: 800px;
+  margin: auto;
+}
+@media (max-width: 480px) {
+  #survey-box{
+     max-width: 375px;
+}
+}
+#survey-form{
+  text-align: center;
+}
+@media (max-width: 480px) {
+  #survey-form{
+    max-width: 375px;
+  }
+}
+#description{
+  font-size: 20px;
+}
+#image{
+  max-width: 100%;
+  height:auto;
+  display: block;
+  margin: 0 auto;
+}
+
+</style>
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<body>  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+<div id="header">  
+<h1 id="title">Operating System Survey</h1>
+<p id="description">A quick form to evaluate the most popular computer operating system</p>
+  </div>
+ 
+<div id=survey-box>
+
+  </br> 
+  
+  <form id="survey-form">
+  <div class="form-group">
+    <label id="name-label" for="name"><strong>Name</strong></label>
+  </br>
+  </br>
+    <input id="name" type="text" placeholder="Enter your name" required>
+  </br>
+  </br>
+  
+  <label id="email-label" for="email"><strong>Email</strong></label>
+  </br>
+  </br>
+  <input id="email" type="email" placeholder="Enter your email" required>
+  </br>
+  </br>
+
+<label id="number-label" for="number"><strong>Age (optional)</strong></label>
+</br>
+</br>
+<input id="number" type="number" min="0" max="100" placeholder="Age">
+</br>
+</br>
+
+<label id="dropdown-label" for="dropdown"><strong>What is your favourite operating system?</strong></label>
+</br>
+</br>
+<select name="dropdown" id="dropdown">
+  <option disabled selected value>Select an option</option>
+  <option value="Windows 10">Windows 10</option>
+  <option value="macOS">macOS</option>
+  <option value="Linux">Linux</option>
+  <option value="Chrome OS">Chrome OS</option>
+  <option value="Other">Other</option>
+</select>
+</br>
+</br>
+
+<label id="experience" for="experience"><strong>How long have you used this operating system?</strong></label>
+</br>
+</br>
+
+<label for="1 year">
+  <input id="1 year" type="radio" value="1 year" name="experience"> 1 Year</label>
+</br>
+
+<label for="2-3 years">
+  <input id="2-3 years" type="radio" value="2-3 years" name="experience"> 2-3 Years</label>
+</br>
+
+<label for="3 years plus">
+  <input id="3 years plus" type="radio" value="3 years plus" name="experience"> More than 3 years</label>
+
+</br>
+</br>
+
+<label id="other devices" for="other devices"><strong>Do you own any of these other devices? Check all that apply</strong></label>
+</br>
+</br>
+
+<label for="Android phone">
+  <input id="Android phone" type="checkbox" value="Android phone" name="other devices"> Android Phone</label>
+</br>
+
+<label for="iPhone">
+  <input id="iPhone" type="checkbox" value="iphone" name="other devices"> iPhone</label>
+</br>
+
+<div class="form-group">
+  <p><strong>Why is this your favourite operating system?</strong></p>
+  <textarea
+       id="comments"
+       value="comments"
+       cols="40"
+       rows="5"     
+       placeholder="Enter your comments here"
+            ></textarea>
+
+  </br>
+</br>
+
+<button id="submit" type="submit">Click here to submit</button>
+
+</br>
+</br>
+
+<p><strong>Thanks for filling out the form!</strong></p>
+
+</form>
+
+</div>
+</div>
+</div>
+
+</br>
+</br>
+
+<img id="image" src="https://www.kaiostech.com/wp-content/uploads/2018/04/Coding-illustration.png" alt="An image of a computer">
+
+</br>
+</br>

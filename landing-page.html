@@ -1,0 +1,256 @@
+<style>
+
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+html {
+  background-color: #eee;
+}
+
+/* unvisited link */
+a:link {
+    text-decoration:none;
+    color:black;
+}
+
+/* visited link */
+a:visited {
+    text-decoration:none;
+    color:black;
+}  
+
+#header {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  background-color: #eee;
+  padding-bottom: 10px;
+}
+
+#header-img {
+  margin: 12px;
+  width: 80px;
+}
+
+@media (min-width: 1000px) {
+  #header {
+  position: fixed;  
+  display: grid;
+  grid-template-columns: 80px 200px 500px;
+  justify-items: center;
+  padding-left: 25%;
+  background-color: #eee;
+  width: 100%; 
+  top: 0;  
+}
+
+nav {
+  margin-top: 25px;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+}
+
+form {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+@media (min-width: 1000px) {
+  form {
+    padding-top: 90px;
+  }
+}
+
+#about-us {
+  width: 60%;
+  padding-top: 10px;
+  padding-left: 20%;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+#what-we-offer {
+  width: 60%;
+  padding-top: 10px;
+  padding-left: 20%;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+#youtube-video {
+  padding-top: 10px;
+  text-align: center;
+}
+
+#video {
+  width: 300px;
+  height: 250px;
+}
+
+@media (min-width: 900px) {
+  #video {
+    width: 560px;
+    height: 315px;
+  }
+}
+
+#pricing {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  padding-top: 20px;
+}
+
+.flex-grid {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+
+.col {
+  flex: 1;
+}
+
+.flex-grid-second {
+  padding-top: 30px;
+  display: flex;
+}
+
+.flex-grid-third {
+  padding-top: 30px;
+  display: flex;
+}
+
+#submit {
+  background-color: #f1c40f;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+}
+
+#copyright {
+  padding-top: 30px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+</style>
+
+<html lang="en">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<header id="header">
+
+<img id="header-img" src="https://www.kindpng.com/picc/m/354-3545686_boot-clip-art-outdoor-boots-transprent-png-cartoon.png" alt="walking boot">
+
+<h2>Adventure Plus</h2>
+ 
+<nav id="nav-bar">
+  
+  <a class="nav-link" href="#about-us">About Us </br> </a>  
+  
+  <a class="nav-link" href="#what-we-offer">What We Offer </br> </a>
+  
+  <a class="nav-link" href="#pricing-info">Pricing</a>
+    
+</nav>  
+
+</header>
+
+<main>
+  
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+  
+<h3>Sign up here to level up your adventures today!</h3>
+  
+<input id="email" name="email" type="email" placeholder="Enter your email" required>
+
+</br>
+</br>  
+  
+<input id="submit" type="submit" value="Click here to submit"</input>
+
+</form>
+
+<section id="about-us">
+ 
+<h3>About Us</h3>
+ 
+<p> After having travelled Scotland and many parts of the world extensively, we have decided to share our adventures and experience with others, who are keen to explore more of the world around them.
+</br>
+</br>
+We will be sharing plenty of tips to help with your travels, how to budget wisely and more importantly to give you inspiration for your next adventure! </p>
+
+</section>
+
+<div id="bullets">
+
+<section id="what-we-offer">
+
+<h3>What We Offer</h3>
+
+<p>- How to save money</p>
+<p>- Give you inspiration for your next adventures</p>
+<p>- How to pack effectively</p>
+<p>- Discover secret places</p>
+
+</section>
+  
+</div>  
+
+<div id="youtube-video">
+
+<iframe id="video" src="https://www.youtube.com/embed/FlG6tbYaA88" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+</div>  
+
+<section id="pricing-info">
+
+<div id="pricing">
+
+<h3>Pricing</h3>
+
+<div class="flex-grid">
+
+  <div class="col"><b>Free Package</b></div>
+  <div class="col"><b>Premium Package</b></div>
+
+</div>
+  
+<div class="flex-grid">
+  <div class="col">
+    <p>- Get travel ideas</p>
+    <p>- Access to free maps</p>
+    <p>- Access the free areas of our blog</p>
+  </div>
+  <div class="col">
+    <p>- Access to premium maps</p>
+    <p>- Money saving vouchers</p>
+    <p>- Full access to the blog</p>
+  </div>
+  </div>
+  
+ <div class="flex-grid-second">
+   <div class="col"><i>Totally free!</i></div>
+   <div class="col"><i>Only £4.99 a month</i></div>
+</div> 
+  
+ <div class="flex-grid-third">
+   <div class="col">
+     <button id="submit" type="submit">Select</button>
+   </div>
+   <div class="col">
+     <button id="submit" type="submit">Select</button>
+   </div>
+</div>   
+
+</div>
+  
+</section>  
+
+<div id="copyright">
+  <p>Copyright 2020, Adventure Plus</p>
+</div>  
+
+</html>
+  

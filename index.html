@@ -15,14 +15,6 @@ p {
   font-family: 'Lato', sans-serif;
 }
 
-header {
-  padding-top: 15px;
-  font-size: 24px;
-  font-family: 'Lato', sans-serif;
-  padding-bottom: 10px;
-  color: white;
-}
-
 #navbar a {
   font-size: 18px;
 }
@@ -31,14 +23,13 @@ header {
   position: fixed;
   text-align: center;
   font-family: 'Lato', sans-serif;
-  background: url(https://static.vecteezy.com/system/resources/previews/000/094/617/original/free-purple-triangles-vector.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-image: linear-gradient(to bottom right, #6402ab, #801cbd);
   border-top: 1px solid white;
   border-bottom: 1px solid white;
-  height: 130px;
+  height: 70px;
   width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* unvisited link */
@@ -56,6 +47,12 @@ a:visited {
 body {
   margin: 0;
   text-align: center;
+}
+
+#title {
+  padding-top: 100px;
+  font-family: 'Lato', sans-serif;
+  color: white;
 }
 
 #welcome-section {
@@ -85,12 +82,6 @@ body {
 }
 
 h1 {
-  font-family: 'Lato', sans-serif;
-  color: white;
-}
-
-#title {
-  padding-top: 140px;
   font-family: 'Lato', sans-serif;
   color: white;
 }
@@ -184,11 +175,6 @@ h3 {
   font-size: 18px;
   color: white;
 }
-  
-#attribution {
-  color: white;
-  font-family: 'Lato', sans-serif;
-}
 
 @media (min-width: 1200px) {
   #navbar {
@@ -196,32 +182,15 @@ h3 {
   display: flex;
   justify-content: flex-end;
   position: fixed;
-  height: 80px;
+  height: 50px;
   width: 100%;
   }
   
   #navbar a {
-  display: flex;
-  align-items: stretch;
-  justify-content: space-around;
-  width: 10%;
-  padding-top: 25px;
+  width: 15%;
+  padding-top: 10px;
   color: white;
-  font-size: 1.5em;
-  }
-  
-  #navbar a:hover {
-  background: #b76bc9;
-  }
-  
-  header {
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 20px;
-  padding-right: 15%;
-  font-size: 1.5em;
-  font-family: 'Lato', sans-serif;
-  color: white;
+  font-size: 24px;
   }
   
   #about-info {
@@ -236,7 +205,7 @@ h3 {
   }
   
   #title {
-    padding-top: 90px;
+    padding-top: 70px;
   }
   
   h1 {
@@ -263,139 +232,132 @@ h3 {
   }  
 }
     
-  </style>
+</style>
       
 </head>
   
 <body>
 
-<nav id="navbar">
+  <nav id="navbar"> 
   
-<header>Jamie Gaskell Portfolio</header>  
-  
-<a href="#welcome-section">About</a> 
-</br>  
-<a href="#projects">Projects</a>
-</br>
-<a href="#linkedin">LinkedIn</a>
-  
-</nav>
-  
-<section id="welcome-section">
-  
-  <h1 id="title">Welcome to my web development portfolio!</h1>
-  
-  <p id="about-info">I am a self-taught web developer learning through freecodecamp.org and have so far successfully achieved a certification in 'Responsive Web Design' (please see below). This required me to design responsive web pages in HTML and CSS. I am now working towards a certification in 'JavaScript Algorithms and Data Structures.'
-  </br>
-  </br>
-In my spare time I volunteer as an IT Support Agent for AbilityNet which involves providing IT support for older and/or disabled people over the phone, through remote device access and face to face where possible.
-</br>
-</br>
-This page is a portfolio for the projects I have completed so far to gain my certifications and has been completely coded myself. </p>
-
-<h2>Certifications</h2>
-
-<p id="about-info">Click on the image to verify the certification</p>
-</br>
-
-<div id="cert-box">
-  
-<a href="https://www.freecodecamp.org/certification/jamiegaskell89/responsive-web-design" target="_blank">  
-
-<h3>Responsive Web Design</h3>
-  
-<img id="responsive-web" src="https://user-images.githubusercontent.com/58035678/100848610-43e99200-3479-11eb-8df9-f9af4787c690.png"> </a> 
-  
-  </div>
-  
-  </section>
-
-<section id="projects">
-  
-  <h2>Projects</h2>
-
-<p id="project-description">Click on the images below to view each project. All of my projects and their code can viewed on GitHub by clicking on the link at the bottom of this section.</p>
-  
-  </br>
-  
-<div id="project-grid">  
-
-<div class=project-tile>  
-  
-  <a href="documentation-page.html" target="_blank">
-  
-<h3>Technical Documentation Page</h3>
-  
-<img id=tech-page src="https://user-images.githubusercontent.com/58035678/99871853-93a49f80-2bd5-11eb-9b34-dae035518bef.png" alt="Playstation 5 Technical Page"> </a> 
-  
-  </div>
-  
-<div class=project-tile>  
-  
-<a href="landing-page.html" target="_blank">
-
-<h3>Blog Landing Page</h3>
-
-<img id=landing-page src="https://user-images.githubusercontent.com/58035678/99961215-ea50db80-2d85-11eb-8e2b-9fb69afcd32c.png" alt="Adventure Blog Landing Page"> </a>
-  
-  </div>
-  
-<div class=project-tile> 
-  
-<a href="survey-page.html" target="_blank">
-
-<h3>Survey Page</h3>
-
-<img id=survey-page src="https://user-images.githubusercontent.com/58035678/99972977-25a7d600-2d97-11eb-9921-b2c86739782a.png" alt="Survey Page"> </a>
-  
-  </div>
-  
-<div class=project-tile>  
-  
-<a href="tribute-page.html" target="_blank"> 
-  
-<h3>Tribute Page</h3>
-  
-<img id=tribute-page src="https://user-images.githubusercontent.com/58035678/99974991-8fc17a80-2d99-11eb-8185-c208c856930c.png" alt="Tribute Page"> </a>
-  
-  </div>
-  </div>
-     
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<a href="https://github.com/jamiegaskell89?tab=repositories" target="_blank" id="profile-link">&nbsp View all on GitHub &nbsp <i class="fa fa-github" style="font-size:24px"></i> &nbsp </a>
-
-</br>
-</br>
-  
-  </section>
-
-<section id="linkedin" class="contact-section">
-  
-  <h2>LinkedIn</h2>
-  
-  <p id="contact-description">You can view my profile and contact me through the following link:</p>
-  
-<div id="contact-link">
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-  <a id="linkedin" href="https://www.linkedin.com/in/jamie-gaskell-061074158/" target="_blank">
-  
-    <i class="fa fa-linkedin-square" style="font-size:36px"></i>&nbsp LinkedIn</a>
-  
-  </div>
-
-</br>
-
-<p>Website designed by Jamie Gaskell</p>
-
-<a id=attribution href="https://www.vecteezy.com/free-vector/background" target="_blank">Navbar background vector by Vecteezy</a>
-
-</br>
-</br>
-
-</section>
+    <a href="#welcome-section">About</a> 
+    </br>  
+    <a href="#projects">Projects</a>
+    </br>
+    <a href="#linkedin">LinkedIn</a>
+      
+    </nav>
+    
+    <section id="welcome-section">
+      
+      <h1 id="title">Jamie Gaskell </br> Portfolio</h1>
+      
+      <p id="about-info">I am a self-taught web developer learning through freecodecamp.org and have so far successfully achieved a certification in 'Responsive Web Design' (please see below). This required me to design responsive web pages in HTML and CSS. I am now working towards a certification in 'JavaScript Algorithms and Data Structures.' 
+      </br>
+      </br>
+    In my spare time I volunteer as an IT Support Agent for AbilityNet which involves providing IT support for older and/or disabled people over the phone, through remote device access and face to face where possible.
+    </br>
+    </br>
+    This page is a portfolio for the projects I have completed so far to gain my certifications and has been completely coded myself.</p>
+    
+    <h2>Certifications</h2>
+    
+    <p id="about-info">Click on the image to verify the certification</p>
+    </br>
+    
+    <div id="cert-box">
+      
+    <a href="https://www.freecodecamp.org/certification/jamiegaskell89/responsive-web-design" target="_blank">  
+    
+    <h3>Responsive Web Design</h3>
+      
+    <img id="responsive-web" src="https://user-images.githubusercontent.com/58035678/100848610-43e99200-3479-11eb-8df9-f9af4787c690.png"> </a> 
+      
+      </div>
+      
+      </section>
+    
+    <section id="projects">
+      
+      <h2>Projects</h2>
+    
+    <p id="project-description">Click on the images below to view the page on CodePen. All of my projects and their code can viewed by clicking on the link at the bottom of this section.</p>
+      
+      </br>
+      
+    <div id="project-grid">  
+    
+    <div class=project-tile>  
+      
+      <a href="https://codepen.io/jamiegaskell89/full/WNxaMzv" target="_blank">
+      
+    <h3>Technical Documentation Page</h3>
+      
+    <img id=tech-page src="https://user-images.githubusercontent.com/58035678/99871853-93a49f80-2bd5-11eb-9b34-dae035518bef.png" alt="Playstation 5 Technical Page"> </a> 
+      
+      </div>
+      
+    <div class=project-tile>  
+      
+    <a href="https://codepen.io/jamiegaskell89/full/LYZWOvO" target="_blank">
+    
+    <h3>Blog Landing Page</h3>
+    
+    <img id=landing-page src="https://user-images.githubusercontent.com/58035678/99961215-ea50db80-2d85-11eb-8e2b-9fb69afcd32c.png" alt="Adventure Blog Landing Page"> </a>
+      
+      </div>
+      
+    <div class=project-tile> 
+      
+    <a href="https://codepen.io/jamiegaskell89/full/MWewzmx" target="_blank">
+    
+    <h3>Survey Page</h3>
+    
+    <img id=survey-page src="https://user-images.githubusercontent.com/58035678/99972977-25a7d600-2d97-11eb-9921-b2c86739782a.png" alt="Survey Page"> </a>
+      
+      </div>
+      
+    <div class=project-tile>  
+      
+    <a href="https://codepen.io/jamiegaskell89/full/BazBYMO" target="_blank"> 
+      
+    <h3>Tribute Page</h3>
+      
+    <img id=tribute-page src="https://user-images.githubusercontent.com/58035678/99974991-8fc17a80-2d99-11eb-8185-c208c856930c.png" alt="Tribute Page"> </a>
+      
+      </div>
+      </div>
+         
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <a href="https://github.com/jamiegaskell89?tab=repositories" target="_blank" id="profile-link">&nbsp View all on GitHub &nbsp <i class="fa fa-github" style="font-size:24px"></i> &nbsp </a>
+    
+    </br>
+    </br>
+      
+      </section>
+    
+    <section id="linkedin" class="contact-section">
+      
+      <h2>LinkedIn</h2>
+      
+      <p id="contact-description">You can view my profile and contact me through the following link:</p>
+      
+    <div id="contact-link">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+      <a id="linkedin" href="https://www.linkedin.com/in/jamie-gaskell-061074158/" target="_blank">
+      
+        <i class="fa fa-linkedin-square" style="font-size:36px"></i>&nbsp LinkedIn</a>
+      
+      </div>
+    
+    </br>
+    
+    <p>Website designed by Jamie Gaskell</p>
+    
+    </section>
 
 </body>
 </html>

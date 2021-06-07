@@ -30,6 +30,7 @@ p {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
+  z-index: 1;
 }
 
 /* unvisited link */
@@ -71,14 +72,37 @@ body {
   padding-right: 30px;
 }
 
-#responsive-web {
-  max-width: 75%;
+#cert-box {
+  position: relative;
+}
+
+#cert-image {
+  position: relative;
+  width: 75%;
   border-left: 3px solid white;
   border-right: 3px solid white;
   border-bottom: 3px solid white;
   margin-bottom: 40px;
   border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;  
+  border-bottom-right-radius: 25px;
+}
+
+#button-left {
+  position: absolute;
+  cursor: pointer;
+  top: 3%;
+  left: 18%;
+  font-size: 20px;
+  color: black;
+}
+
+#button-right {
+  position: absolute;
+  cursor: pointer;
+  top: 3%;
+  right: 18%;
+  font-size: 20px;
+  color: black;
 }
 
 #project-description {
@@ -113,37 +137,7 @@ h3 {
   color: black;
 }
 
-#tech-page {
-  max-width: 75%;
-  border-left: 3px solid white;
-  border-right: 3px solid white;
-  border-bottom: 3px solid white;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  margin-bottom: 40px;
-}
-
-#landing-page {
-  max-width: 75%;
-  border-left: 3px solid white;
-  border-right: 3px solid white;
-  border-bottom: 3px solid white;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  margin-bottom: 40px;
-}
-
-#survey-page {
-  max-width: 75%;
-  border-left: 3px solid white;
-  border-right: 3px solid white;
-  border-bottom: 3px solid white;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  margin-bottom: 40px;
-}
-
-#tribute-page {
+#project-image {
   max-width: 75%;
   border-left: 3px solid white;
   border-right: 3px solid white;
@@ -181,6 +175,24 @@ h3 {
   color: white;
 }
 
+@media (min-width: 800px) {
+  
+  #cert-box {
+  width: 50%;
+  margin: 0 auto;
+}
+  
+  #button-left {
+  top: 2%;
+  font-size: 24px; 
+}
+
+  #button-right {
+  top: 2%;
+  font-size: 24px;
+}
+}
+
 @media (min-width: 1200px) {
   #navbar {
   font-family: 'Lato', sans-serif;
@@ -199,14 +211,8 @@ h3 {
   }
   
   #about-info {
-    text-align: center;
-    font-size: 20px;
-  }
-  
-  #cert-box {
-  width: 50%;
-  position: center;
-  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
   }
   
   #title {
@@ -238,6 +244,45 @@ h3 {
 }
     
 </style>
+
+<script>
+
+let titles = ["Responsive Web Design", "JavaScript Algorithms"]
+
+let links = ["https://www.freecodecamp.org/certification/jamiegaskell89/responsive-web-design", "https://www.freecodecamp.org/certification/jamiegaskell89/javascript-algorithms-and-data-structures"];
+
+let images = [
+  "https://user-images.githubusercontent.com/58035678/120992079-27a51580-c77a-11eb-9954-9ecc78ab78f5.png", "https://user-images.githubusercontent.com/58035678/120991771-d9901200-c779-11eb-8def-8f87226be2b8.png" ];
+
+let num = 0;
+
+function next() {
+  let slider = document.getElementById('cert-image');
+  let link = document.getElementById('link-target');
+  let title = document.getElementById('cert-title');
+  num++;
+  if (num >= images.length) {
+    num = 0;
+  }
+  slider.src = images[num];
+  link.href = links[num];
+  title.innerText = titles[num];
+}
+
+function previous() {
+  let slider = document.getElementById('cert-image');
+  let link = document.getElementById('link-target');
+  let title = document.getElementById('cert-title');
+  num--;
+  if (num < 0) {
+    num = images.length - 1
+  }
+  slider.src = images[num];
+  link.href = links[num];
+  title.innerText = titles[num];
+}
+
+</script>
       
 </head>
   
@@ -267,16 +312,23 @@ h3 {
     
     <h2>Certifications</h2>
     
-    <p id="about-info">Click on the image to verify the certification</p>
+    <p id="about-info">Cycle through my certifications using the arrows and click on the image to verify.</p>
     </br>
     
-    <div id="cert-box">
-      
-    <a href="https://www.freecodecamp.org/certification/jamiegaskell89/responsive-web-design" target="_blank">  
+    <div id="cert-box">  
     
-    <h3>Responsive Web Design</h3>
+    <h3 id ="cert-title">Responsive Web Design</h3>
       
-    <img id="responsive-web" src="https://user-images.githubusercontent.com/58035678/100848610-43e99200-3479-11eb-8df9-f9af4787c690.png"> </a> 
+    <a id ="link-target" href="https://www.freecodecamp.org/certification/jamiegaskell89/responsive-web-design" target="_blank">  
+    
+    <img id="cert-image" src="https://user-images.githubusercontent.com/58035678/120992079-27a51580-c77a-11eb-9954-9ecc78ab78f5.png"> </a> 
+      
+      <div id="button-left"
+         <button onclick="previous()">&#10094</button>
+    </div>
+    <div id="button-right"
+           <button onclick="next()">&#10095;</button>
+    </div>
       
       </div>
       
@@ -286,19 +338,29 @@ h3 {
       
       <h2>Projects</h2>
     
-    <p id="project-description">Click on the images below to view each of my projects from Free Code Camp. All of my projects and their code can viewed by clicking on the link at the bottom of this section.</p>
+    <p id="project-description">Click on the images below to view some of my personal and Free Code Camp projects. All of my projects and their code can viewed by clicking on the link at the bottom of this section.</p>
       
       </br>
       
     <div id="project-grid">  
+      
+    <div class=project-tile>  
+      
+      <a href="https://codepen.io/jamiegaskell89/full/bGqNwEY" target="_blank">
+      
+    <h3>Personal Travel Blog</h3>
+      
+    <img id=project-image src="https://user-images.githubusercontent.com/58035678/120990990-13ace400-c779-11eb-81e8-7e8d49b4d423.png" alt="Personal travel blog page"> </a> 
+      
+      </div>  
     
     <div class=project-tile>  
       
-      <a href= "documentation-page.html" target="_blank">
+      <a href="documentation-page.html" target="_blank">
       
     <h3>Technical Documentation Page</h3>
       
-    <img id=tech-page src="https://user-images.githubusercontent.com/58035678/99871853-93a49f80-2bd5-11eb-9b34-dae035518bef.png" alt="Playstation 5 Technical Page"> </a> 
+    <img id=project-image src="https://user-images.githubusercontent.com/58035678/99871853-93a49f80-2bd5-11eb-9b34-dae035518bef.png" alt="Playstation 5 Technical Page"> </a> 
       
       </div>
       
@@ -308,7 +370,7 @@ h3 {
     
     <h3>Blog Landing Page</h3>
     
-    <img id=landing-page src="https://user-images.githubusercontent.com/58035678/99961215-ea50db80-2d85-11eb-8e2b-9fb69afcd32c.png" alt="Adventure Blog Landing Page"> </a>
+    <img id=project-image src="https://user-images.githubusercontent.com/58035678/99961215-ea50db80-2d85-11eb-8e2b-9fb69afcd32c.png" alt="Adventure Blog Landing Page"> </a>
       
       </div>
       
@@ -318,7 +380,7 @@ h3 {
     
     <h3>Survey Page</h3>
     
-    <img id=survey-page src="https://user-images.githubusercontent.com/58035678/99972977-25a7d600-2d97-11eb-9921-b2c86739782a.png" alt="Survey Page"> </a>
+    <img id=project-image src="https://user-images.githubusercontent.com/58035678/99972977-25a7d600-2d97-11eb-9921-b2c86739782a.png" alt="Survey Page"> </a>
       
       </div>
       
@@ -328,7 +390,7 @@ h3 {
       
     <h3>Tribute Page</h3>
       
-    <img id=tribute-page src="https://user-images.githubusercontent.com/58035678/99974991-8fc17a80-2d99-11eb-8185-c208c856930c.png" alt="Tribute Page"> </a>
+    <img id=project-image src="https://user-images.githubusercontent.com/58035678/99974991-8fc17a80-2d99-11eb-8185-c208c856930c.png" alt="Tribute Page"> </a>
       
       </div>
       </div>
@@ -363,6 +425,6 @@ h3 {
     <p>Website designed by Jamie Gaskell</p>
     
     </section>
-
-</body>
-</html>
+    
+    </body>
+    </html>

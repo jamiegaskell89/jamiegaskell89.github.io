@@ -94,6 +94,8 @@ body {
   left: 18%;
   font-size: 20px;
   color: black;
+  border-style: none;
+  background: #b1b4ba;
 }
 
 #button-right {
@@ -103,6 +105,8 @@ body {
   right: 18%;
   font-size: 20px;
   color: black;
+  border-style: none;
+  background: #b1b4ba;
 }
 
 #project-description {
@@ -302,16 +306,11 @@ function previous() {
       
       <h1 id="title">Jamie Gaskell </br> Portfolio</h1>
       
-      <p id="about-info">I am a self-taught web developer learning through freecodecamp.org and have so far successfully 
-        achieved certifications in "Responsive Web Design" and "JavaScript Algorithms and Data Structures" (please see below). 
-        This has involved completing various challenges and projects covering HTML5, CSS and JavaScript. I am now studying 
-        towards a certification in "Front End Development Libraries" which covers Bootstrap, jQuery, SASS, React and Redux. 
-      </br>
-      </br>
-    In my spare time I volunteer as an IT Support Agent for AbilityNet which involves providing IT support for older and/or disabled people over the phone, through remote device access and face to face where possible.
-    </br>
-    </br>
-    This page is a portfolio for the projects I have completed so far to gain my certifications and has been completely coded myself.</p>
+      <article id="about-info">
+        <p>I am a self-taught web developer learning through freecodecamp.org and have so far successfully achieved certifications in "Responsive Web Design" and "JavaScript Algorithms and Data Structures" (please see below). This has involved completing various challenges and projects covering HTML5, CSS and JavaScript. I am now studying towards a certification in "Front End Development Libraries" which covers Bootstrap, jQuery, SASS, React and Redux.</p>
+        <p>In my spare time I volunteer as an IT Support Agent for AbilityNet which involves providing IT support for older and/or disabled people over the phone, through remote device access and face to face where possible.</p>
+        <p>This page is a portfolio for the projects I have completed so far to gain my certifications and has been completely coded myself.</p>
+        </article>
     
     <h2>Certifications</h2>
     
@@ -319,21 +318,18 @@ function previous() {
     </br>
     
     <div id="cert-box">  
-    
-    <h3 id="cert-title">Responsive Web Design</h3>
+
+      <h3 id="cert-title">Responsive Web Design</h3>
+        
+           <button id="button-left" onclick="previous()" tabindex="0">&#10094</button>
       
-    <a id="link-target" href="https://www.freecodecamp.org/certification/jamiegaskell89/responsive-web-design" target="_blank">  
-    
-    <img id="cert-image" src="https://user-images.githubusercontent.com/58035678/120992079-27a51580-c77a-11eb-9954-9ecc78ab78f5.png" alt="Certifications obtained from free code camp"> </a> 
+           <button id="button-right" onclick="next()" tabindex="0">&#10095;</button>
+        
+      <a id="link-target" href="https://www.freecodecamp.org/certification/jamiegaskell89/responsive-web-design" target="_blank">  
       
-      <div id="button-left"
-         <button onclick="previous()">&#10094</button>
-    </div>
-    <div id="button-right"
-           <button onclick="next()">&#10095;</button>
-    </div>
-      
-      </div>
+      <img id="cert-image" src="https://user-images.githubusercontent.com/58035678/120992079-27a51580-c77a-11eb-9954-9ecc78ab78f5.png" alt="Certifications obtained from free code camp"> </a> 
+        
+        </div>
       
       </section>
     

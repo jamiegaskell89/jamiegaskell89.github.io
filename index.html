@@ -38,6 +38,17 @@ a {
     color: white;
 }
 
+#navbar a:hover {
+  text-decoration: 3px white underline;
+}
+
+a:hover {
+  text-decoration: 3px black underline;
+}
+
+#linkedin a:hover {
+  text-decoration: 3px white underline;
+}
 
 body {
   margin: 0;
@@ -312,15 +323,15 @@ function previous() {
     
     <div id="cert-box">  
 
-      <h3 id="cert-title">Responsive Web Design</h3>
-        
-      <button id="button-left" onclick="previous()" aria-label="Press to scroll left">&#10094</button>
+      <h3 id="cert-title" aria-live="assertive" aria-atomic="true">Responsive Web Design</h3>
+  
+     <button id="button-left" onclick="previous()" aria-label="Scroll left through certifications">&#10094</button>
 
-      <button id="button-right" onclick="next()" aria-label="Press to scroll right">&#10095;</button>
-        
-      <a id="link-target" href="https://www.freecodecamp.org/certification/jamiegaskell89/responsive-web-design" target="_blank">  
-      
-      <img id="cert-image" src="https://user-images.githubusercontent.com/58035678/120992079-27a51580-c77a-11eb-9954-9ecc78ab78f5.png" alt="Certifications obtained from free code camp"> </a> 
+     <button id="button-right" onclick="next()" aria-label="Scroll right through certifications">&#10095;</button>
+  
+        <a id="link-target" href="https://www.freecodecamp.org/certification/jamiegaskell89/responsive-web-design" target="_blank">  
+
+        <img id="cert-image" src="https://user-images.githubusercontent.com/58035678/120992079-27a51580-c77a-11eb-9954-9ecc78ab78f5.png" alt="Certification obtained from free code camp"> </a> 
         
         </div>
       

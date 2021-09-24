@@ -15,6 +15,16 @@ p {
   font-family: 'Lato', sans-serif;
 }
 
+#skip-link {
+  position: relative;
+  bottom: 1000px;
+}
+
+#skip-link:focus {
+  position: relative;
+  bottom: 0px;
+}
+
 #navbar a {
   font-size: 18px;
 }
@@ -298,6 +308,7 @@ function previous() {
 
   <nav id="navbar"> 
   
+    <a id="skip-link" href="#projects">Skip to projects</a>
     <a href="#welcome-section">About</a> 
     </br>  
     <a href="#projects">Projects</a>

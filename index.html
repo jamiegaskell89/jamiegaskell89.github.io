@@ -107,7 +107,7 @@ body {
   position: absolute;
   cursor: pointer;
   top: 3%;
-  left: 18%;
+  left: 15%;
   font-size: 20px;
   color: black;
   border-style: none;
@@ -118,7 +118,7 @@ body {
   position: absolute;
   cursor: pointer;
   top: 3%;
-  right: 18%;
+  right: 15%;
   font-size: 20px;
   color: black;
   border-style: none;
@@ -142,6 +142,7 @@ h2 {
 
 h3 {
   font-family: 'Lato', sans-serif;
+  font-size: 1em;
   background: #b1b4ba;
   width: 75%;
   margin: 0 auto;
@@ -204,11 +205,13 @@ h3 {
   
   #button-left {
   top: 2%;
+  left: 18%;  
   font-size: 24px; 
 }
 
   #button-right {
   top: 2%;
+  right: 18%;  
   font-size: 24px;
 }
 }
@@ -222,7 +225,7 @@ h3 {
   height: 50px;
   width: 100%;
   }
-
+  
   #skip-link:focus {
   position: relative;
   right: 0px;
@@ -248,6 +251,11 @@ h3 {
     color: white;
   }
   
+  h3 {
+    font-size: 1.3em;
+    height: 35px;
+  }
+  
   #project-description {
     font-size: 20px;
     color: white;
@@ -271,7 +279,7 @@ h3 {
 
 <script>
 
-let titles = ["Responsive Web Design", "JavaScript Algorithms"]
+let titles = ["Responsive Design", "JavaScript Algorithms"]
 
 let links = ["https://www.freecodecamp.org/certification/jamiegaskell89/responsive-web-design", "https://www.freecodecamp.org/certification/jamiegaskell89/javascript-algorithms-and-data-structures"];
 
@@ -316,9 +324,9 @@ function previous() {
   
     <a id="skip-link" href="#projects">Skip to projects</a>
     <a href="#welcome-section">About</a> 
-    </br>  
+      </br>  
     <a href="#projects">Projects</a>
-    </br>
+      </br>
     <a href="#linkedin">LinkedIn</a>
       
     </nav>
@@ -327,11 +335,11 @@ function previous() {
       
       <h1 id="title">Jamie Gaskell </br> Portfolio</h1>
       
-      <article id="about-info">
-        <p>I am a self-taught web developer learning through freecodecamp.org and have so far successfully achieved certifications in "Responsive Web Design" and "JavaScript Algorithms and Data Structures" (please see below). This has involved completing various challenges and projects covering HTML5, CSS and JavaScript. I am now studying towards a certification in "Front End Development Libraries" which covers Bootstrap, jQuery, SASS, React and Redux.</p>
-        <p>In my spare time I volunteer as an IT Support Agent for AbilityNet which involves providing IT support for older and/or disabled people over the phone, through remote device access and face to face where possible.</p>
-        <p>This page is a portfolio for the projects I have completed so far to gain my certifications and has been completely coded myself.</p>
-        </article>
+     <article id="about-info">
+    <p>I am passionate about accessibility and web development and currently work as an Accessibility Consultant at AbilityNet. In my spare time I volunteer with the same organisation, providing IT support for older and/or disabled people over the phone, through remote device access and face to face where possible.</p>
+    <p>I have taught myself to code through freecodecamp.org and have so far gained certifications in "Responsive Web Design" and "JavaScript Algorithms and Data Structures." This has involved completing various challenges and projects covering HTML5, CSS and JavaScript. I am now studying towards a certification in "Front End Development Libraries" which covers Bootstrap, jQuery, SASS, React and Redux. </p>
+    <p>This page is a portfolio for the projects I have completed so far to gain my certifications and has been completely coded myself.</p>
+    </article>
     
     <h2>Certifications</h2>
     
@@ -339,18 +347,18 @@ function previous() {
     </br>
     
     <div id="cert-box">  
-
-      <h3 id="cert-title" aria-live="assertive" aria-atomic="true">Responsive Web Design</h3>
-  
-     <button id="button-left" onclick="previous()" aria-label="Scroll left through certifications">&#10094</button>
-
-     <button id="button-right" onclick="next()" aria-label="Scroll right through certifications">&#10095;</button>
-  
-        <a id="link-target" href="https://www.freecodecamp.org/certification/jamiegaskell89/responsive-web-design" target="_blank">  
-
-        <img id="cert-image" src="https://user-images.githubusercontent.com/58035678/120992079-27a51580-c77a-11eb-9954-9ecc78ab78f5.png" alt="Certification obtained from free code camp"> </a> 
-        
-        </div>
+    
+    <h3 id="cert-title" aria-live="assertive" aria-atomic="true">Responsive Design</h3>
+      
+         <button id="button-left" onclick="previous()" aria-label="Scroll left through certifications">&#10094</button>
+    
+         <button id="button-right" onclick="next()" aria-label="Scroll right through certifications">&#10095;</button>
+      
+    <a id="link-target" href="https://www.freecodecamp.org/certification/jamiegaskell89/responsive-web-design" target="_blank">  
+    
+    <img id="cert-image" src="https://user-images.githubusercontent.com/58035678/120992079-27a51580-c77a-11eb-9954-9ecc78ab78f5.png" alt="Certification obtained from free code camp"> </a> 
+      
+      </div>
       
       </section>
     
@@ -358,36 +366,35 @@ function previous() {
       
       <h2>Projects</h2>
     
-    <p id="project-description">Click on the images below to view some of my personal and Free Code Camp projects. All of 
-      my projects and their code can viewed by clicking on the GitHub link at the bottom of this section.</p>
+    <p id="project-description">Click on the images below to view some of my personal and Free Code Camp projects. All of my projects and their code can viewed by clicking on the GitHub link at the bottom of this section.</p>
       
       </br>
       
     <div id="project-grid">
       
-      <div class=project-tile>  
-  
-        <a href="markdown-previewer.html" target="_blank">
-        
-      <h3>Markdown Previewer</h3>
-        
-      <img id=project-image src="https://user-images.githubusercontent.com/58035678/133231679-82a202b1-7814-4ba0-9218-742b7c8613b6.png" alt="Markdown Previewer"> </a> 
-        
-        </div>  
+    <div class=project-tile>  
+      
+      <a href="https://codepen.io/jamiegaskell89/full/vYmbGrx" target="_blank">
+      
+    <h3>Markdown Previewer</h3>
+      
+    <img id=project-image src="https://user-images.githubusercontent.com/58035678/133231679-82a202b1-7814-4ba0-9218-742b7c8613b6.png" alt="Markdown Previewer"> </a> 
+      
+      </div>  
       
     <div class=project-tile>  
       
-      <a href="quote-machine.html" target="_blank">
-  
-        <h3>Random Quote App</h3>
-          
-        <img id=project-image src="https://user-images.githubusercontent.com/58035678/128685719-24930faf-1de5-4c45-a4f1-8e87ec038bbb.png" alt="Random Quote App"> </a> 
+      <a href="https://codepen.io/jamiegaskell89/full/LYyOrGN" target="_blank">
+      
+    <h3>Random Quote App</h3>
+      
+    <img id=project-image src="https://user-images.githubusercontent.com/58035678/128685719-24930faf-1de5-4c45-a4f1-8e87ec038bbb.png" alt="Random Quote App"> </a> 
       
       </div>  
     
     <div class=project-tile>  
       
-      <a href="documentation-page.html" target="_blank">
+      <a href="https://codepen.io/jamiegaskell89/full/WNxaMzv" target="_blank">
       
     <h3>Technical Documentation Page</h3>
       
@@ -397,7 +404,7 @@ function previous() {
       
     <div class=project-tile>  
       
-    <a href="landing-page.html" target="_blank">
+    <a href="https://codepen.io/jamiegaskell89/full/LYZWOvO" target="_blank">
     
     <h3>Blog Landing Page</h3>
     
@@ -407,7 +414,7 @@ function previous() {
       
     <div class=project-tile> 
       
-    <a href="survey-page.html" target="_blank">
+    <a href="https://codepen.io/jamiegaskell89/full/MWewzmx" target="_blank">
     
     <h3>Survey Page</h3>
     
@@ -417,7 +424,7 @@ function previous() {
       
     <div class=project-tile>  
       
-    <a href="tribute-page.html" target="_blank"> 
+    <a href="https://codepen.io/jamiegaskell89/full/BazBYMO" target="_blank"> 
       
     <h3>Tribute Page</h3>
       

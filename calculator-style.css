@@ -1,0 +1,68 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+body {
+  background-color: #ccdaf0;
+}
+
+#app {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: black;
+}
+
+@media (max-width: 1000px) {
+#keyboard-toggle {
+  display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  
+  body {
+  background-color: white;
+}
+  
+  #app {
+  border: 3px solid black;
+  width: 450px;
+  margin: auto;
+  background-color: #ccdaf0  
+  } 
+}
+
+h1 {
+  font-size: 2.0em;
+}
+
+#keyboard-toggle {
+  width: 200px;
+  font-size: 1.1em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#display {
+  font-size: 1.5em;
+  border: 3px solid black;
+  width: 300px;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  text-align: right;
+  background-color: white;
+}
+
+button {
+  font-family: 'Lato', sans-serif;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.8em;
+  width: 60px;
+}
+
+#cancel {
+  margin-right: 170px;
+}

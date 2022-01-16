@@ -4,6 +4,10 @@ body {
   background-color: #ccdaf0;
 }
 
+button {
+  width: 50px;
+}
+
 #app {
   text-align: center;
   font-family: 'Lato', sans-serif;

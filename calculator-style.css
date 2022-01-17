@@ -6,6 +6,11 @@ body {
 
 button {
   width: 55px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border: 1px solid black;
+  background-color: #edebeb;
+  color: black;
 }
 
 #app {
